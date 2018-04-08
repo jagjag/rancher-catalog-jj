@@ -1,0 +1,29 @@
+.catalog:
+  name: MSSQLServer
+  version: 1.0
+  description: sqlserver
+  questions: #Used to request user input for configuration options
+    - variable: "mssqlscale"
+      type: "int"
+      required: true
+      label: "mssqlscale"
+      description: "mssqlscale"
+      default: 3
+    - variable: "mssql_password"
+      type: "string"
+      required: true
+      label: "SA Password"
+      description: "require Strong Password"
+      default: <YourStrong!Passw0rd>
+    - variable: "mssql_port"
+      type: "string"
+      required: true
+      label: "mssql_port"
+      description: "connect port"
+      default: 1433
+
+version: '2'
+services:
+  mssql-linux:
+    scale: ${mssqlscale}
+    start_on_create: true

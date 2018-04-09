@@ -1,7 +1,8 @@
-name: 微软SQLSERVER
+name: Microsoft SQLSERVER
 description: |
-  sqlserver2017 docker部署
-version: 1.0
+ Microsoft sqlserver 2017 docker edition
+version: 2017-CU5-rancher1
+maintainer: "JJmomark <kyukou@gmail.com>"
 category: Database
 maintainer: Jiang Jiang 
-
+projectURL: https://github.com/jagjag/rancher-catalog-jj/tree/master/templates/mssqlserver

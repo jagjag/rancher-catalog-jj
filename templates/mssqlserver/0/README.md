@@ -4,7 +4,7 @@ Before you start, please read this first.
 
 ### ACCEPT_EULA
 the container of this package will start with 'ACCEPT_EULA=Y' environment variable.
-Which means you accepted the ![EULA](https://go.microsoft.com/fwlink/?linkid=857698) from Microsoft.
+Which means you accepted the [EULA](https://go.microsoft.com/fwlink/?linkid=857698) from Microsoft.
 
 By passing the value "Y" to the environment variable "ACCEPT_EULA", you are expressing that you have a valid and existing license for the edition and version of SQL Server that you intend to use. You also agree that your use of SQL Server software running in a Docker container image will be governed by the terms of your SQL Server license.
 
@@ -31,5 +31,7 @@ A strong system administrator (SA) password: At least 8 characters including upp
 ### For more information
 
 please check out here: 
+
 [https://hub.docker.com/r/microsoft/mssql-server-linux/](https://hub.docker.com/r/microsoft/mssql-server-linux/)
+
 [https://github.com/Microsoft/mssql-docker](https://github.com/Microsoft/mssql-docker)

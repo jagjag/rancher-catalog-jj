@@ -1,7 +1,8 @@
-# MSSQLSERVER
+# Microsoft Sqlserver 2017
+
+**Before you start, please read this first**.
 
 ### ACCEPT_EULA
-**Before you start, please read this first**.
 the container of this package will start with 'ACCEPT_EULA=Y' environment variable.
 Which means you accepted the ![EULA](https://go.microsoft.com/fwlink/?linkid=857698) from Microsoft.
 

@@ -24,7 +24,7 @@ MSSQL_PID is the Product ID (PID) or Edition that the container will run with. A
 * Enterprise : This will run the container using the Enterprise Edition
 * EnterpriseCore : This will run the container using the Enterprise Edition Core
 
-For a complete list of environment variables that can be used, refer to the documentation ![here](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker).
+For a complete list of environment variables that can be used, refer to the documentation here [https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker).
 
 ## Strong Password
 
@@ -33,4 +33,4 @@ A strong system administrator (SA) password: At least 8 characters including upp
 
 ## For more information
 
-please check out ![here](https://hub.docker.com/r/microsoft/mssql-server-linux/)
+please check out here: [https://hub.docker.com/r/microsoft/mssql-server-linux/](https://hub.docker.com/r/microsoft/mssql-server-linux/)

@@ -3,14 +3,14 @@
 Before you start, please read this first.
 
 ### ACCEPT_EULA
+
 the container of this package will start with 'ACCEPT_EULA=Y' environment variable.
 Which means you accepted the [EULA](https://go.microsoft.com/fwlink/?linkid=857698) from Microsoft.
+
 By passing the value "Y" to the environment variable "ACCEPT_EULA", you are expressing that you have a valid and existing license for the edition and version of SQL Server that you intend to use. You also agree that your use of SQL Server software running in a Docker container image will be governed by the terms of your SQL Server license.
 
 
 ### MSSQL_PID
-
-SQL Server Developer edition lets developers build any kind of application on top of SQL Server. It includes all the functionality of Enterprise edition, but is licensed for use as a development and test system, not as a production server. SQL Server Developer Edition cannot be used in a production environment. The SQL Server 2017 Developer Edition license terms are located here.
 
 MSSQL_PID is the Product ID (PID) or Edition that the container will run with. Acceptable values:
 

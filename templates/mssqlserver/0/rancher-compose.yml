@@ -22,7 +22,7 @@ version: '2'
       type: "string"
       required: true
       label: "SA Password"
-      description: "require Strong Password"
+      description: " At least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols."
       default: <YourStrong!Passw0rd>
     - variable: "mssql_port"
       type: "string"

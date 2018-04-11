@@ -139,3 +139,4 @@ volumes:
   es-storage-volume:
     driver: ${VOLUME_DRIVER}
     per_container: true
+

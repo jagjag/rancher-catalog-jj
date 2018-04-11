@@ -1,6 +1,6 @@
-name: tomcat (automatic download war package)
+name: tomcat
 description: |
-    alpine based tomcat application , traefik proxy configuration and application auto download
-version: v1.0
+    alpine based tomcat application , traefik proxy configuration and application war file auto download
+version: 8.0-jre8-rancher1
 category: java
 maintainer: Jiang Jiang <kyukou@gmail.com> 

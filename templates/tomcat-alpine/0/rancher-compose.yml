@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: tomcat80jre8-1
-  version: tomcat80jre8-v1.0
+  version: 8.0-jre8-rancher1
   description: tomcat alpine with treafik and app download
   questions:
     - variable: "tomcat_instance"

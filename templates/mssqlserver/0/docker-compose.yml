@@ -16,4 +16,3 @@ services:
 volumes:
   mssqlvolume:
     driver: ${VOLUME_DRIVER}
-    per_container: true

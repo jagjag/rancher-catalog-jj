@@ -3,7 +3,7 @@ version: '2'
   name: MSSQLServer
   version: 2017-CU5-rancher1
   description: sqlserver
-  maintainer: "JagJag <kyukou@gmail.com>"
+  maintainer: "Jiang Jiang <kyukou@gmail.com>"
   questions: 
     - variable: "mssql_pid"
       label: "Mssql edition:"
@@ -28,7 +28,7 @@ version: '2'
       type: "string"
       required: true
       label: "mssql_port"
-      description: "connect port"
+      description: "connect to mssql by this port"
       default: 1433
     - variable: "VOLUME_DRIVER"
       description: "The VOLUME driver to associate with this server"

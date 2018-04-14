@@ -26,7 +26,6 @@ services:
     tc80jre8app:
         image: alpine:3.6
         stdin_open: true
-        # tty: true
         volumes_from:
             - tc80jre8volume
         links:
@@ -71,4 +70,3 @@ volumes:
     tc80jre8logs1:
     tc80jre8apps:
         per_container: true
-    #    driver: ${VOLUME_DRIVER}

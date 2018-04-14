@@ -18,12 +18,14 @@ traefik labels will be add to a rancher lb. and rancher lb is a proxy of tomcat 
 So. there will be only one port to expose to the host.
 
 1. traefik_rontend_rule:
+
 traefik.frontend.rule = Host:MyCustoDomain.com
 ```
 Host:<you server_name or FQDN>
 ```
+
 2. traefik http/https:
-http or https
 
 3. traefik port
+
 point to rancher lb port 

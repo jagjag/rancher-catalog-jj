@@ -1,6 +1,6 @@
 name: tomcat
 description: |
-    alpine based tomcat application , traefik proxy configuration and application war file auto download
+    alpine based tomcat , application war file auto download and traefik proxy configuration
 version: 8.0-jre8-rancher1
 category: java
 maintainer: Jiang Jiang <kyukou@gmail.com> 

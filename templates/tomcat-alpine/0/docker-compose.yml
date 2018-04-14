@@ -3,7 +3,6 @@ services:
     tc80jre8:
         image: jagjag/tomcat-alpine:tomcat80jre8
         labels:
-            io.rancher.container.pull_image: always
             io.rancher.sidekicks: tc80jre8volume, tc80jre8app
             io.rancher.container.hostname_override: container_name
             io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
@@ -35,7 +34,6 @@ services:
         depends_on:
             - tc80jre8volume
         labels:
-            io.rancher.container.pull_image: always
             io.rancher.container.start_once: 'true'
             io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
         entrypoint: "/usr/bin/wget ${war_file_url} -P /opt/apache-tomcat-8.0.50/webapps"
@@ -43,7 +41,6 @@ services:
     tc80jre8volume:
         image: alpine:3.6
         labels:
-            io.rancher.container.pull_image: always
             io.rancher.container.start_once: 'true'
             io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
         stdin_open: true
@@ -65,7 +62,7 @@ services:
             traefik.enable: ${traefik_enable} #'true'
             traefik.default.protocol: ${treafik_default_protocal} #http
             traefik.port: ${lb_port} #'10800'
-            traefik.path: ${traefik_path} # /
+            traefik.path: ${traefik_path} # default /
             {{- end }}
         links:
             - tc80jre8:tc80jre8

@@ -15,7 +15,7 @@ catalog:
       type: "int"
       required: true
       label: "Memory limit"
-      description: "mem_limit = Xmx(JVM) + MaxPermSize(JVM) + OtherMem(cache&buffer)"
+      description: "mem_limit = Xmx(JVM) + OtherMem(cache&buffer)"
       default: 5368709120
 
     - variable: "java_opts"
@@ -23,13 +23,13 @@ catalog:
       required: false
       label: "JAVA_OPTS"
       description: "jvm opts"
-      default: '-server -Xms4096m -Xmx4096m -XX:NewSize=2048m -XX:MaxNewSize=2048m -XX:PermSize=256m -XX:MaxPermSize=512m -Duser.timezone="Asia/Shanghai" -XX:+UseParallelOldGC -XX:ParallelGCThreads=4' 
+      default: '-server -Xms4096m -Xmx4096m -XX:NewSize=2048m -XX:MaxNewSize=2048m -XX:+UseParallelOldGC -XX:ParallelGCThreads=4' 
 
     - variable: "war_file_url"
       type: "string"
       required: true
-      label: "warfileURL"
-      description: "you Warfile URL"
+      label: "your warball URL"
+      description: "You Warball URL to be download"
       default: "http://getsome.com/ROOT.war" 
 
     - variable: "lb_port"
@@ -40,8 +40,8 @@ catalog:
       default: 10800 
 
     - variable: "traefik_enable"
-      label: "Traefik proxy enable or not"
-      description: "Traefik proxy enabled?"
+      label: "Traefik proxy enabled or not"
+      description: "Traefik proxy enabled or not"
       default: false
       required: true
       type: enum
@@ -65,13 +65,6 @@ catalog:
       options:
         - http
         - https
-
-    - variable: "traefik_path"
-      type: "string"
-      required: true
-      label: "traefik_path"
-      description: "traefik_path"
-      default: "/" 
 
 services:
     tc80jre8app:

@@ -1,3 +1,0 @@
-Tomcat alpine and traefik 
-=====================
-

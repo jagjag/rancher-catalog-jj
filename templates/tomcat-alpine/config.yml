@@ -1,6 +1,6 @@
-name: es623-xxx
+name: tomcat-alpine
 description: |
-    es
-version: 6.2.3-xpack-rancher1
+    alpine based tomcat , application war file auto download and traefik proxy configuration
+version: 8.0-jre8-rancher1
 category: java
 maintainer: Jiang Jiang <kyukou@gmail.com> 

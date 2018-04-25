@@ -1,22 +1,5 @@
-Tomcat alpine and traefik 
-=====================
+# Elasticsearch Cluster
 
-What's inside?
---------------
+A scalable Elasticsearch cluster
 
-* tomcat:
-[Tomcat image](https://hub.docker.com/r/jagjag/alpine-tomcat/)
-tomcat image base on [anapsix/docker-alpine-java](https://github.com/anapsix/docker-alpine-java) and [davidcaste/docker-alpine-tomcat](https://github.com/davidcaste/docker-alpine-tomcat)
-oracle jre with unlimited JCE
-standard ouput was turned off , all logs output to /logs
-
-* App(warball) download:
-there wil be a sidekick container to download a warball from specifed URL when you start this app.
-
-* traefik labels:
-traefik labels will be add to a rancher lb. and rancher lb is a proxy of tomcat instance.
-So. there will be only one port to expose to the host.
-
-1. traefik_rontend_rule: traefik.frontend.rule = Host:MyCustoDomain.com
-2. traefik http/https
-3. traefik port: point to rancher lb port 
+WARN: To avoid vm.max_map_count errors you could set "Update host sysctl" to true. Then param vm.max_map_count will be update to 262144 if it's less in your hosts.

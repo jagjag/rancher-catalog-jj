@@ -1,0 +1,6 @@
+name:  ZooNavigator
+description: |
+    elkozmon's ZooNavigator is a web-based browser/editor for ZooKeeper.
+version: 0.4.0-rancher1
+category: Clustering
+maintainer: Jiang Jiang <kyukou@gmail.com> 
